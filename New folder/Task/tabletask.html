@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+    table{
+        width: 100%;
+        border: 1px solid white;        
+    }
+    table,tr,th,td{
+        border-collapse: collapse;
+    }
+    table th{
+        color: white;
+        background-color: black;
+        padding: 10px 20px 10px 20px; 
+    }
+    table td{
+        text-align: center;
+        padding: 5px 10px 5px 10px;
+    }
+    table tr:nth-child(even){
+        background-color: rgb(241, 232, 232);
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>NAME   (DESC)</th>
+            <th>WINS</th>
+            <th>DRAWS</th>
+            <th>LOSSES</th>
+            <th>TOTAL</th>
+        </tr>
+        <TR>
+            <td>Dick</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </TR>
+        <tr>
+            <td>Harry</td>
+            <td>0</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Tom</td>
+            <td>2</td>
+            <td>0</td>
+            <td>1</td>
+            <td>5</td>
+        </tr>
+    </table>
+</body>
+</html>

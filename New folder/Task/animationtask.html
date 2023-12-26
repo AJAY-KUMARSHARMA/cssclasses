@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: cadetblue;
+            margin: auto;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border-radius: 100%;
+            position: relative;
+            animation: box1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes box1{
+            0%{
+                top: 200px;
+                left: 0px;
+                background-color: red;
+                box-shadow: 5px 5px 25px black;
+                border: 5px solid pink;
+            }
+            25%{
+                top: 0px;
+                left: 200px;
+                background-color: blue;
+                box-shadow: 5px 5px 25px black;
+                border: 5px double pink;
+            }
+            50%{
+                top: 200px;
+                left: 390px;
+                background-color: green;
+                box-shadow: 5px 5px 25px black;
+                border: 5px dotted pink;
+            }
+            75%{
+                top: 390px;
+                left: 200px;
+                background-color: gray;
+                box-shadow: 5px 5px 25px black;
+                border: 5px dashed pink;
+            }
+            100%{
+                top: 200px;
+                left: 0px;
+                background-color: yellow;
+                box-shadow: 5px 5px 25px black;
+                border: 5px solid pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+
+        </div>
+
+    </div>
+</body>
+</html>

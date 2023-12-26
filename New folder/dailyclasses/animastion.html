@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: brown;
+            border-radius: 100%;
+            position: relative;
+            animation: box;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        @keyframes box{
+            /*from{
+                background-color: blue;
+                top: 100px;
+                left: 100px;
+            }
+            to{
+                background-color: coral;
+                top: 500px;
+                left: 700px;
+            }*/
+            0%{
+                background-color: aqua;
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                background-color: antiquewhite;
+                top: 0px;
+                left: 800px;
+            }
+            50%{
+                background-color: azure;
+                top: 500px;
+                left: 800px;
+            }
+            75%{
+                background-color: blue;
+                top: 500px;
+                left: 0px;
+            }
+            100%{
+                background-color: black;
+                top: 0px;
+                left: 0px;
+            }
+
+        }
+        .box1{
+            
+        }
+        .box1 > div{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            border-radius: 100%;
+            margin: 10px;
+            position: relative;
+            animation-name: hello;
+            animation-iteration-count: infinite;            
+            animation-duration: 3s;
+        }
+        .box2{
+            animation-timing-function: ease;
+            /*slow start, then fast, end slowly*/
+        }
+        .box3{
+            animation-timing-function: linear;
+            /*same speed from start to end*/
+        }
+        .box4{
+            animation-timing-function: ease-in;
+            /*slow start*/
+        }
+        .box5{
+            animation-timing-function: ease-out;
+            /*slow end*/
+        }
+        .box6{
+            animation-timing-function: ease-in-out
+            /*slow start and end*/
+        }
+        @keyframes hello{
+            from{
+                left: 0px;
+            }
+            tO{
+                left: 500px;
+            }
+
+        }
+        p{
+            animation-name: p;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes p{
+            from{
+                margin-left: 200%;
+                width: 200%;
+            }
+            to{
+                margin-left: 0px;
+                width: 100%;
+            }
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quibusdam?</p>
+</body>
+</html>
